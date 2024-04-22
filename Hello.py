@@ -2,9 +2,9 @@ import streamlit as st
 from pathlib import Path
 import json
 import requests
-from streamlit.logger import get_logger
+#from streamlit.logger import get_logger
 
-LOGGER = get_logger(__name__)
+#LOGGER = get_logger(__name__)
 
 
 def run():
@@ -69,5 +69,5 @@ def run():
 
             json.dump(json_data, f, indent=4)
         st.write("Der API-Request ist abgeschlossen. Sie können die abgerufenen Daten jetzt in Ihrem ausgewählten Speicherort öffnen und ansehen.")
-if __name__ == "__main__":
-    run()
+#if __name__ == "__main__":
+run()
