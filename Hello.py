@@ -69,7 +69,5 @@ def run():
 
             json.dump(json_data, f, indent=4)
         st.write("Der API-Request ist abgeschlossen. Sie können die abgerufenen Daten jetzt in Ihrem ausgewählten Speicherort öffnen und ansehen.")
-
-
 if __name__ == "__main__":
     run()
