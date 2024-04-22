@@ -37,13 +37,12 @@ def run():
 
     if st.button(label=':violet[API-Request starten]',use_container_width=True):
         fields_str ='name,ima_formula,ima_status,ima_notes,description_short,mindat_formula,mindat_formula_note'
-        WORKING_DIR = speicherort
-        Path(WORKING_DIR).mkdir(parents=True, exist_ok=True)
+        Path(speicherort).mkdir(parents=True, exist_ok=True)
         MINDAT_API_URL = "https://api.mindat.org"
         headers = {'Authorization': 'Token '+ key}
 
         select_file_name = "mindat_data_IMA_download_2.json" 
-        select_file_path = Path(WORKING_DIR,select_file_name) 
+        select_file_path = Path(speicherort,select_file_name) 
         select_file_path
 
 
